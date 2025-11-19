@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/output.css" />
-    <title>Document</title>
+    <title>Bolhuis Kerstbomen</title>
   </head>
   <body class="bg-WW">
-    <div class="allcontainer bg-ww w-full h-full">
+    <div id="top" class="allcontainer bg-ww w-full h-full">
       <div class="TOP">
-        <div class="navbar fixed bg-DG/80 backdrop-blur-xl text-WW w-full flex p-4 shadow-md z-50">
+        <div class="navbar fixed bg-DG/80 backdrop-blur-xl text-WW w-full flex p-4 shadow-xl z-50">
           <div class="container mx-auto flex items-center">
             <div class="logo">
               <img class="h-10 ml-10" src="./img/NavBarLogo.svg" alt="BolHuis Logo" />
@@ -17,7 +17,7 @@
 
             <div id="navDropdown" class="flex items-center gap-4 ml-auto mr-10">
               <a
-                href="#"
+                href="#top"
                 class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
                 style="opacity: 0; transform: translateX(20px)"
               >
@@ -28,21 +28,28 @@
                 class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
                 style="opacity: 0; transform: translateX(20px)"
               >
-                Products
+                Collectie
               </a>
               <a
                 href="#"
                 class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
                 style="opacity: 0; transform: translateX(20px)"
               >
-                About Us
+                Blog
               </a>
               <a
                 href="#"
                 class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
                 style="opacity: 0; transform: translateX(20px)"
               >
-                Contact
+                Over Ons
+              </a>
+              <a
+                href="#"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
+              >
+                Verkoop Plaats
               </a>
             </div>
 
@@ -89,23 +96,37 @@
       </div>
       <div class="MID py-20 bg-WW">
         <div class="container mx-auto px-6">
-          <div class="contentSection bg-DG/95 backdrop-blur-sm hover:shadow-xl shadow-DG rounded-2xl p-12 shadow-2xl mb-16 transition-all ease-in-out duration-300">
-            <h2 class="text-6xl font-bold mb-8 text-KR ml-10 text-start">Wie zijn wij?</h2>
+          <div
+            class="contentSection bg-DG/95 backdrop-blur-sm hover:shadow-xl shadow-DG rounded-2xl p-12 shadow-2xl mb-32 transition-all ease-in-out duration-300"
+          >
+            <h2 class="text-6xl font-bold text-KR ml-10 text-start">Wie zijn wij?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div class="space-y-6 text-WW/90">
-                <p class="text-2xl leading-relaxed">
+                <p class="text-lg leading-relaxed">
                   Sinds 1923 is Kwekerij Bolhuis een familiebedrijf waar traditie, vakmanschap en het buitenleven
                   samenkomen. Wat begon met oprichter Popke Bolhuis is uitgegroeid tot een kwekerij waarin generaties
                   kennis en ervaring worden doorgegeven, zonder ooit de passie voor het vak te verliezen.
                 </p>
-                <p class="text-2xl leading-relaxed">
-                  Bij Bolhuis draait het om meer dan het kweken en verkopen van kerstbomen. Elke boom vertelt een verhaal:
-                  over het ritme van de seizoenen, de geur van vers dennengroen en de beleving van samen een boom
-                  uitzoeken.
+                <p class="text-lg leading-relaxed">
+                  Bij Bolhuis draait het om meer dan het kweken en verkopen van kerstbomen. Elke boom vertelt een
+                  verhaal: over het ritme van de seizoenen, de geur van vers dennengroen en de beleving van samen een
+                  boom uitzoeken.
                 </p>
+                <div class="mt-10">
+                  <a
+                    href="#"
+                    class="bg-KR text-WW font-bold outline-KR outline-4 mt-5 outline-offset-4 text-lg px-10 py-2 rounded-sm shadow-xl hover:shadow-1xl transition-all duration-300 hover:scale-105"
+                  >
+                    Over Ons
+                  </a>
+                </div>
               </div>
               <div>
-                <img class="rounded-2xl w-full h-full object-cover shadow-lg" src="./img/wiezijnwij.jpg" alt="Wie zijn wij">
+                <img
+                  class="rounded-2xl w-full h-full object-cover shadow-lg"
+                  src="./img/wiezijnwij.jpg"
+                  alt="Wie zijn wij"
+                />
               </div>
             </div>
           </div>
@@ -124,12 +145,11 @@
                   ></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-DG mb-3">Quality Products</h3>
+              <h3 class="text-2xl font-bold text-DG mb-3">Kwaliteitsproducten</h3>
               <p class="text-gray-600">
-                Premium bulbs and plants carefully selected and cultivated for optimal growth and beauty.
+                Premium bollen en planten zorgvuldig geselecteerd en gekweekt voor optimale groei en schoonheid.
               </p>
             </div>
-
             <div
               class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-KL hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-KL"
             >
@@ -143,9 +163,10 @@
                   ></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-DG mb-3">Sustainable</h3>
+              <h3 class="text-2xl font-bold text-DG mb-3">Duurzaam</h3>
               <p class="text-gray-600">
-                Eco-friendly practices ensuring a greener tomorrow while nurturing nature today.
+                Milieuvriendelijke praktijken die een groenere toekomst garanderen terwijl we vandaag de natuur
+                koesteren.
               </p>
             </div>
 
@@ -162,22 +183,123 @@
                   ></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-DG mb-3">Expert Care</h3>
-              <p class="text-gray-600">Decades of horticultural expertise to help your garden flourish year-round.</p>
+              <h3 class="text-2xl font-bold text-DG mb-3">Vakkundige Zorg</h3>
+              <p class="text-gray-600">
+                Decennia aan tuinbouwexpertise om uw tuin het hele jaar door te laten bloeien.
+              </p>
             </div>
           </div>
 
           <div class="text-center">
             <a
               href="#"
-              class="inline-block bg-DG hover:bg-DG/90 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-DG hover:shadow-1xl transition-all duration-300 hover:scale-105"
+              class="inline-block bg-DG hover:bg-DG/90 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-DG hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
-              Explore Our Collection
+              Ontdek Onze Collectie
+            </a>
+          </div>
+        </div>
+
+        <div class="recentCase container mx-auto px-6 py-20">
+          <h2 class="text-6xl font-bold mb-12 text-DG text-center">Recent Nieuws</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="news-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-KL transition-all duration-300 hover:scale-105 border-l-4 border-KL"
+            >
+              <div class="h-48 bg-linear-to-br from-KL to-KR relative overflow-hidden">
+                <img src="./img/wiezijnwij.jpg" alt="News" class="w-full h-full object-cover opacity-80" />
+                <div class="absolute top-4 right-4 bg-WW px-3 py-1 rounded-full text-sm font-bold text-DG">
+                  19 Nov 2025
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-KR mb-3">Kerstbomen Seizoen Geopend</h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  Het nieuwe kerstbomen seizoen is officieel geopend! Kom langs en kies uw perfecte kerstboom uit onze
+                  prachtige collectie.
+                </p>
+                <a href="#" class="inline-flex items-center text-DG font-bold hover:text-KL/80 transition-colors">
+                  Lees meer
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="news-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-KL transition-all duration-300 hover:scale-105 border-l-4 border-KL"
+            >
+              <div class="h-48 bg-linear-to-br from-DG to-KL relative overflow-hidden">
+                <img src="./img/HeroImg.jpg" alt="News" class="w-full h-full object-cover opacity-80" />
+                <div class="absolute top-4 right-4 bg-WW px-3 py-1 rounded-full text-sm font-bold text-DG">
+                  15 Nov 2025
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-KR mb-3">Duurzaamheid in Focus</h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  Ontdek onze nieuwe milieuvriendelijke initiatieven en hoe wij bijdragen aan een groenere toekomst voor
+                  iedereen.
+                </p>
+                <a href="#" class="inline-flex items-center text-DG font-bold hover:text-KL/80 transition-colors">
+                  Lees meer
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="news-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-KL transition-all duration-300 hover:scale-105 border-l-4 border-KL"
+            >
+              <div class="h-48 bg-linear-to-br from-KR to-DG relative overflow-hidden">
+                <img src="./img/wiezijnwij.jpg" alt="News" class="w-full h-full object-cover opacity-80" />
+                <div class="absolute top-4 right-4 bg-WW px-3 py-1 rounded-full text-sm font-bold text-DG">
+                  10 Nov 2025
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-KR mb-3">100 Jaar Traditie</h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  Een blik terug op onze rijke geschiedenis sinds 1923 en de familiebanden die ons bedrijf zo bijzonder
+                  maken.
+                </p>
+                <a href="#" class="inline-flex items-center text-DG font-bold hover:text-KL/80 transition-colors">
+                  Lees meer
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="#"
+              class="inline-block bg-DG hover:bg-DG/90 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-DG hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+              Bekijk Blog Voor Meer Nieuws
             </a>
           </div>
         </div>
       </div>
-      <div class="BOT"></div>
+      <div class="BOT">
+        <footer class="bg-DG text-WW py-30 mt-20 relative">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img src="./img/trees.svg" alt="Tree" class="h-64 w-auto" />
+            <img src="./img/trees.svg" alt="Tree" class="h-64 w-auto" />
+          </div>
+          <div class="container mx-auto px-6 relative z-10">
+            <div class="flex items-center justify-center">
+              <p class="text-center text-lg">&copy; 2025 Bolhuis Kwekerij. Alle rechten voorbehouden.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="../js/home.js"></script>
   </body>
