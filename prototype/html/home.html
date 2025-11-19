@@ -6,65 +6,177 @@
     <link rel="stylesheet" href="../src/output.css" />
     <title>Document</title>
   </head>
-  <body class="">
+  <body class="bg-WW">
     <div class="allcontainer bg-ww w-full h-full">
       <div class="TOP">
-        <div class="navbar fixed bg-DG/80 backdrop-blur-xl text-WW w-full flex p-4 shadow-md">
+        <div class="navbar fixed bg-DG/80 backdrop-blur-xl text-WW w-full flex p-4 shadow-md z-50">
           <div class="container mx-auto flex items-center">
             <div class="logo">
-              <img src="../img/bolhuis-logo.png" alt="BolHuis Logo" />
+              <img class="h-10 ml-10" src="./img/NavBarLogo.svg" alt="BolHuis Logo" />
             </div>
-            
-            <div id="navDropdown" class="flex items-center gap-4 ml-auto mr-4">
+
+            <div id="navDropdown" class="flex items-center gap-4 ml-auto mr-10">
               <a
                 href="#"
-                class="nav-item px-4 py-2 text-WW hover:bg-KL/20 transition-all duration-300 rounded"
-                style="opacity: 0; transform: translateX(20px);"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
               >
                 Home
               </a>
               <a
                 href="#"
-                class="nav-item px-4 py-2 text-WW hover:bg-KL/20 transition-all duration-300 rounded"
-                style="opacity: 0; transform: translateX(20px);"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
               >
                 Products
               </a>
               <a
                 href="#"
-                class="nav-item px-4 py-2 text-WW hover:bg-KL/20 transition-all duration-300 rounded"
-                style="opacity: 0; transform: translateX(20px);"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
               >
                 About Us
               </a>
               <a
                 href="#"
-                class="nav-item px-4 py-2 text-WW hover:bg-KL/20 transition-all duration-300 rounded"
-                style="opacity: 0; transform: translateX(20px);"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
               >
                 Contact
               </a>
             </div>
-            
-            <div class="nav-menu">
+
+            <div
+              class="nav-menu mr-10 flex content-center shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:scale-105 transistion all ease-in-out duration-300"
+            >
               <button
                 id="navToggle"
                 aria-expanded="false"
                 aria-controls="navDropdown"
-                class="flex items-center bg-DG gap-2 p-2 rounded hover:bg-KL/20 focus:outline-none transition all ease-in-out duration-500"
+                class="bg-DG gap-2 p-2 rounded hover:bg-KL/20 focus:outline-none transition all ease-in-out duration-500"
               >
-                Menu
+                <div class="flex items-center content-center gap-1">
+                  <p class="">Menu</p>
+                  <svg
+                    class="w-5 h-5 transistion all ease-in-out duration-300"
+                    id="dropArrow"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 9-7 7-7-7"
+                    />
+                  </svg>
+                </div>
               </button>
             </div>
           </div>
         </div>
-        <div class="heroSection">
-          <div class="">
-            <img src="./img/HeroImg.JPG" alt="heroimg" />
+        <div class="heroSection w-full h-screen relative">
+          <img src="./img/HeroImg.jpg" alt="heroImg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img src="./img/Bolhuis-Kwekerij-BADGE-kleur(1).svg" alt="HeroLogo" />
           </div>
         </div>
       </div>
-      <div class="MID"></div>
+      <div class="MID py-20 bg-WW">
+        <div class="container mx-auto px-6">
+          <div class="contentSection bg-DG/95 backdrop-blur-sm hover:shadow-xl shadow-DG rounded-2xl p-12 shadow-2xl mb-16 transition-all ease-in-out duration-300">
+            <h2 class="text-6xl font-bold mb-8 text-KR ml-10 text-start">Wie zijn wij?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div class="space-y-6 text-WW/90">
+                <p class="text-2xl leading-relaxed">
+                  Sinds 1923 is Kwekerij Bolhuis een familiebedrijf waar traditie, vakmanschap en het buitenleven
+                  samenkomen. Wat begon met oprichter Popke Bolhuis is uitgegroeid tot een kwekerij waarin generaties
+                  kennis en ervaring worden doorgegeven, zonder ooit de passie voor het vak te verliezen.
+                </p>
+                <p class="text-2xl leading-relaxed">
+                  Bij Bolhuis draait het om meer dan het kweken en verkopen van kerstbomen. Elke boom vertelt een verhaal:
+                  over het ritme van de seizoenen, de geur van vers dennengroen en de beleving van samen een boom
+                  uitzoeken.
+                </p>
+              </div>
+              <div>
+                <img class="rounded-2xl w-full h-full object-cover shadow-lg" src="./img/wiezijnwij.jpg" alt="Wie zijn wij">
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div
+              class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-KL hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-KL"
+            >
+              <div class="w-16 h-16 bg-KL/50 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-8 h-8 text-KR" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-DG mb-3">Quality Products</h3>
+              <p class="text-gray-600">
+                Premium bulbs and plants carefully selected and cultivated for optimal growth and beauty.
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-KL hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-KL"
+            >
+              <div class="w-16 h-16 bg-KL/50 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-8 h-8 text-KR" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-DG mb-3">Sustainable</h3>
+              <p class="text-gray-600">
+                Eco-friendly practices ensuring a greener tomorrow while nurturing nature today.
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-KL hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-KL"
+            >
+              <div class="w-16 h-16 bg-KL/50 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-8 h-8 text-KR" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-DG mb-3">Expert Care</h3>
+              <p class="text-gray-600">Decades of horticultural expertise to help your garden flourish year-round.</p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a
+              href="#"
+              class="inline-block bg-DG hover:bg-DG/90 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-DG hover:shadow-1xl transition-all duration-300 hover:scale-105"
+            >
+              Explore Our Collection
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="BOT"></div>
     </div>
     <script src="../js/home.js"></script>
