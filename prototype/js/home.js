@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('navToggle');
     const menu = document.getElementById('navDropdown');
+    const NavArrow = document.getElementById("dropArrow");
     if (!btn || !menu) return;
     
     const navItems = menu.querySelectorAll('.nav-item');
@@ -8,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', e => {
         const open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
-        
+
+        NavArrow.style.transform = open ? "rotate(0deg)" : "rotate(90deg)";
+
         if (!open) {
             navItems.forEach((item, index) => {
                 setTimeout(() => {
@@ -33,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.style.transform = 'translateX(20px)';
             });
             btn.setAttribute('aria-expanded', 'false');
+            NavArrow.style.transform = "rotate(0deg)";
         }
     });
 });
