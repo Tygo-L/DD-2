@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../src/output.css" />
+        <title>Blog pagina</title>
+    </head>
+    <body class="bg-WW">
+        <div class="allcontainer bg-ww w-full h-full">
+            <div class="TOP">
+                <div class="navbar fixed bg-DG backdrop-blur-xl text-WW w-full flex p-4 shadow-md z-50">
+                    <div class="container mx-auto flex items-center">
+                        <div class="logo">
+                            <img class="h-10 ml-10" src="./img/NavBarLogo.svg" alt="BolHuis Logo" />
+                        </div>
+
+                        <div id="navDropdown" class="flex items-center gap-4 ml-auto mr-10">
+                            <a
+                                href="#"
+                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                                style="opacity: 0; transform: translateX(20px)"
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="#"
+                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                                style="opacity: 0; transform: translateX(20px)"
+                            >
+                                Products
+                            </a>
+                            <a
+                                href="#"
+                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                                style="opacity: 0; transform: translateX(20px)"
+                            >
+                                About Us
+                            </a>
+                            <a
+                                href="#"
+                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                                style="opacity: 0; transform: translateX(20px)"
+                            >
+                                Contact
+                            </a>
+                        </div>
+
+                        <div
+                            class="nav-menu mr-10 flex content-center shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:scale-105 transistion all ease-in-out duration-300"
+                        >
+                            <button
+                                id="navToggle"
+                                aria-expanded="false"
+                                aria-controls="navDropdown"
+                                class="bg-DG gap-2 p-2 rounded hover:bg-KL/20 focus:outline-none transition all ease-in-out duration-500"
+                            >
+                                <div class="flex items-center content-center gap-1">
+                                    <p class="">Menu</p>
+                                    <svg
+                                        class="w-5 h-5 transistion all ease-in-out duration-300"
+                                        id="dropArrow"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m19 9-7 7-7-7"
+                                        />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-26 w-full flex justify-center text-7xl">
+            <p>"Door de ogen van de kweker"</p>
+        </div>
+        <div class="text-6xl">
+            <h2 class="m-10 text-KR">December 2025</h2>
+        </div>
+        <div class="bg-DG flex">
+            <img src="./img/DSC02945.png" alt="op de traktor" class="w-[600px] m-10"/>
+            <div class="flex flex-col space justify-center">
+                <div class="mb-11">
+                    <p class="text-9xl mb-5 text-KR w-[550px]">Het is weer tijd!</p>
+                    <p class="text-3xl text-KL">Martin Bolhuis</p>
+                </div>
+                <p class="text-xl text-WW">
+                    Het was mooi om te zijn dat zoveel van jullie erbij waren en nou jullie eigen kerstboom naar huis
+                    hadden kunnen nemen. Ik hoop dat jullie allemaal er een mooie kerstboom van maken voor in de
+                    woonkamer.
+                </p>
+                <p class="text-xl text-WW mt-5">Alvast een mooie kerst en een gelukkig nieuw jaar.</p>
+            </div>
+        </div>
+        <div class="text-6xl">
+            <h2 class="m-10 text-KR">oktober 2025</h2>
+        </div>
+        <div class="bg-DG flex">
+            <img src="./img/DSC02945.png" alt="op de traktor" class="w-[600px] m-10"/>
+            <div class="flex flex-col space justify-center">
+                <div class="mb-11">
+                    <p class="text-9xl mb-5 text-KR w-[550px]">Het is weer tijd!</p>
+                    <p class="text-3xl text-KL">Martin Bolhuis</p>
+                </div>
+                <p class="text-xl text-WW">
+                    Het was mooi om te zijn dat zoveel van jullie erbij waren en nou jullie eigen kerstboom naar huis
+                    hadden kunnen nemen. Ik hoop dat jullie allemaal er een mooie kerstboom van maken voor in de
+                    woonkamer.
+                </p>
+                <p class="text-xl text-WW mt-5">Alvast een mooie kerst en een gelukkig nieuw jaar.</p>
+            </div>
+        </div>
+        <script src="../js/home.js"></script>
+    </body>
+</html>
