@@ -1,125 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../src/output.css" />
-        <title>Blog pagina</title>
-    </head>
-    <body class="bg-WW">
-        <div class="allcontainer bg-ww w-full h-full">
-            <div class="TOP">
-                <div class="navbar fixed bg-DG backdrop-blur-xl text-WW w-full flex p-4 shadow-md z-50">
-                    <div class="container mx-auto flex items-center">
-                        <div class="logo">
-                            <img class="h-10 ml-10" src="./img/NavBarLogo.svg" alt="BolHuis Logo" />
-                        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Blog pagina</title>
+  </head>
+  <body class="bg-WW">
+    <div class="allcontainer bg-ww w-full h-full">
+      <div class="TOP">
+        <div class="navbar fixed bg-DG/80 backdrop-blur-xl text-WW w-full flex p-4 shadow-xl z-50">
+          <div class="container mx-auto flex items-center">
+            <div class="logo">
+              <img class="h-10 ml-10" src="./img/NavBarLogo.svg" alt="BolHuis Logo" />
+            </div>
 
-                        <div id="navDropdown" class="flex items-center gap-4 ml-auto mr-10">
-                            <a
-                                href="index.html"
-                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
-                                style="opacity: 0; transform: translateX(20px)"
-                            >
-                                Home
-                            </a>
-                            <a
-                                href="#"
-                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
-                                style="opacity: 0; transform: translateX(20px)"
-                            >
-                                Products
-                            </a>
-                            <a
-                                href="#"
-                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
-                                style="opacity: 0; transform: translateX(20px)"
-                            >
-                                About Us
-                            </a>
-                            <a
-                                href="#"
-                                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
-                                style="opacity: 0; transform: translateX(20px)"
-                            >
-                                Contact
-                            </a>
-                        </div>
+            <div id="navDropdown" class="flex items-center gap-4 ml-auto mr-10">
+              <a
+                href="index.html"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
+              >
+                Home
+              </a>
+              <a
+                href="https://www.bolhuiskerstbomenplantgoed.nl/winkel/"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
+              >
+                Collectie
+              </a>
+              <a
+                href="#top"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
+              >
+                Blog
+              </a>
+              <a
+                href="overons.html"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
+              >
+                Over Ons
+              </a>
+              <a
+                href="verkoop.html"
+                class="nav-item px-4 py-2 text-WW shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:bg-KL/20 hover:scale-105 transistion all ease-in-out duration-300 rounded"
+                style="opacity: 0; transform: translateX(20px)"
+              >
+                Verkoop Plaats
+              </a>
+            </div>
 
-                        <div
-                            class="nav-menu mr-10 flex content-center shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:scale-105 transistion all ease-in-out duration-300"
-                        >
-                            <button
-                                id="navToggle"
-                                aria-expanded="false"
-                                aria-controls="navDropdown"
-                                class="bg-DG gap-2 p-2 rounded hover:bg-KL/20 focus:outline-none transition all ease-in-out duration-500"
-                            >
-                                <div class="flex items-center content-center gap-1">
-                                    <p class="">Menu</p>
-                                    <svg
-                                        class="w-5 h-5 transistion all ease-in-out duration-300"
-                                        id="dropArrow"
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="m19 9-7 7-7-7"
-                                        />
-                                    </svg>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
+            <div
+              class="nav-menu mr-10 flex content-center shadow-sm hover:shadow-lg hover:shadow-KL/20 hover:scale-105 transistion all ease-in-out duration-300"
+            >
+              <button
+                id="navToggle"
+                aria-expanded="false"
+                aria-controls="navDropdown"
+                class="bg-DG gap-2 p-2 rounded hover:bg-KL/20 focus:outline-none transition all ease-in-out duration-500"
+              >
+                <div class="flex items-center content-center gap-1">
+                  <p class="">Menu</p>
+                  <svg
+                    class="w-5 h-5 transistion all ease-in-out duration-300"
+                    id="dropArrow"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 9-7 7-7-7"
+                    />
+                  </svg>
                 </div>
+              </button>
             </div>
+          </div>
         </div>
-        <div class="mt-26 w-full flex justify-center text-7xl">
-            <p>"Door de ogen van de kweker"</p>
+        <div class="heroSection w-full h-96 relative bg-linear-to-br from-DG to-KL">
+          <div class="absolute inset-0 bg-DG/60"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <h1 class="text-7xl font-bold text-WW mb-6">"Door de ogen van de kweker"</h1>
+            <p class="text-2xl text-KL font-semibold">Verhalen, updates en inzichten van Kwekerij Bolhuis</p>
+          </div>
         </div>
-        <div class="text-6xl">
-            <h2 class="m-10 text-KR font-bitter">December 2025</h2>
-        </div>
-        <div class="bg-DG flex">
-            <img src="./img/DSC02945.png" alt="op de traktor" class="w-[600px] m-10" />
-            <div class="flex flex-col space justify-center">
-                <div class="mb-11">
-                    <p class="text-8xl mb-5 text-KR font-bitter">Het is weer tijd!</p>
-                    <p class="text-3xl text-KL">Martin Bolhuis</p>
-                </div>
-                <p class="text-xl text-WW pr-9">
-                    Het was mooi om te zijn dat zoveel van jullie erbij waren en nou jullie eigen kerstboom naar huis
-                    hadden kunnen nemen. Ik hoop dat jullie allemaal er een mooie kerstboom van maken voor in de
-                    woonkamer.
-                </p>
-                <p class="text-xl text-WW mt-5">Alvast een mooie kerst en een gelukkig nieuw jaar.</p>
+      </div>
+      <div class="MID py-20 bg-WW">
+        <div class="container mx-auto px-6">
+          <div class="text-6xl mb-12">
+            <h2 class="text-KR font-bitter">December 2025</h2>
+          </div>
+          <div class="contentSection bg-DG flex rounded-2xl overflow-hidden shadow-2xl mb-20 transition-all ease-in-out duration-300">
+            <img src="./img/DSC02945.png" alt="op de traktor" class="w-[600px] object-cover" />
+            <div class="flex flex-col justify-center p-10">
+              <div class="mb-11">
+                <p class="text-8xl mb-5 text-KR font-bitter">Het is weer tijd!</p>
+                <p class="text-3xl text-KL">Martin Bolhuis</p>
+              </div>
+              <p class="text-xl text-WW pr-9">
+                Het was mooi om te zien dat zoveel van jullie erbij waren en nu jullie eigen kerstboom naar huis
+                hadden kunnen nemen. Ik hoop dat jullie allemaal er een mooie kerstboom van maken voor in de
+                woonkamer.
+              </p>
+              <p class="text-xl text-WW mt-5">Alvast een mooie kerst en een gelukkig nieuw jaar.</p>
             </div>
-        </div>
-        <div class="text-6xl">
-            <h2 class="m-10 text-KR font-bitter">oktober 2025</h2>
-        </div>
-        <div class="bg-DG flex">
-            <img src="./img/bomen.png" alt="op de traktor" class="w-[600px] m-10" />
-            <div class="flex flex-col space justify-center">
-                <div class="mb-11">
-                    <p class="text-8xl mb-5 text-KR font-bitter">De bomen staan klaar</p>
-                    <p class="text-3xl text-KL">Martin Bolhuis</p>
-                </div>
-                <p class="text-xl text-WW pr-9">
-                    De bomen voor komend kerst staan klaar voor wanneer we in November ze te koop zetten. Het was weer
-                    een zware maar mooie dag om te inspecteren en voorbereiden voor de verkoop.
-                </p>
-                <p class="text-xl text-WW mt-5">Ik hoop veel van jullie te zien in November en nog December!</p>
+          </div>
+
+          <div class="text-6xl mb-12">
+            <h2 class="text-KR font-bitter">Oktober 2025</h2>
+          </div>
+          <div class="contentSection bg-DG flex rounded-2xl overflow-hidden shadow-2xl mb-20 transition-all ease-in-out duration-300">
+            <img src="./img/bomen.png" alt="de bomen" class="w-[600px] object-cover" />
+            <div class="flex flex-col justify-center p-10">
+              <div class="mb-11">
+                <p class="text-8xl mb-5 text-KR font-bitter">De bomen staan klaar</p>
+                <p class="text-3xl text-KL">Martin Bolhuis</p>
+              </div>
+              <p class="text-xl text-WW pr-9">
+                De bomen voor komend kerst staan klaar voor wanneer we in November ze te koop zetten. Het was weer een zware
+                maar mooie dag om te inspecteren en voorbereiden voor de verkoop.
+              </p>
+              <p class="text-xl text-WW mt-5">Ik hoop veel van jullie te zien in November en nog December!</p>
             </div>
+          </div>
         </div>
-        <script src="../js/index.js"></script>
-    </body>
+      </div>
+      <div class="BOT">
+        <footer class="bg-DG text-WW py-30 mt-20 relative">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img src="./img/trees.svg" alt="Tree" class="h-64 w-auto" />
+        <img src="./img/trees.svg" alt="Tree" class="h-64 w-auto" />
+      </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="flex items-center justify-center">
+          <p class="text-center text-lg">&copy; 2025 Bolhuis Kwekerij. Alle rechten voorbehouden.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
 </html>

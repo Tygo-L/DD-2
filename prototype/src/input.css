@@ -8,7 +8,6 @@
   --color-ZZ: #231f20;
 }
 
-/* Section highlight effects */
 .contentSection,
 .recentCase,
 .feature-card,
@@ -23,11 +22,15 @@
   transform: translateY(0) !important;
 }
 
+.section-highlight:hover {
+  box-shadow: 0px 25px 50px -12px #384734;
+}
+
 .contentSection:hover,
 .feature-card:hover,
 .news-card:hover {
   opacity: 1;
-  box-shadow: 0 25px 50px -12px rgba(231, 160, 78, 0.4);
+  box-shadow: 0 25px 50px -12px rgba(56, 71, 52, 0.5);
 }
 
 .recentCase:hover {

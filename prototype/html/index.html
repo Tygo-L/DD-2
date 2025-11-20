@@ -94,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="MID py-20 bg-WW">
+      <div class="MID py-20 px-6 bg-WW">
         <div class="container mx-auto px-6">
           <div
             class="contentSection bg-DG/95 backdrop-blur-sm hover:shadow-xl hover:shadow-DG shadow-DG rounded-2xl p-12 shadow-2xl mb-32 transition-all ease-in-out duration-300"
@@ -131,11 +131,12 @@
             </div>
           </div>
 
-          <div class="feature-card mb-32 pt-10 rounded-xl">
-            <h2 class="text-6xl font-bold text-DG text-center mb-12 font-bitter">Onze Producten</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 p-5 gap-8 mb-16">
+          <div class="feature-card mb-32 pt-10 rounded-xl relative">
+            <div class="absolute inset-0 bg-linear-to-br from-KL/50 via-transparent to-KR/50 rounded-xl pointer-events-none"></div>
+            <h2 class="text-6xl font-bold text-DG text-center mb-12 relative z-10">Onze Producten</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 p-5 gap-8 mb-16 relative z-10">
               <div
-                class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-KL hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-DG/80"
+                class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-DG hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-DG/80"
               >
                 <div class="w-16 h-16 bg-KL/50 rounded-full flex items-center justify-center mb-4">
                   <svg class="w-8 h-8 text-KR" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -192,13 +193,12 @@
               </div>
             </div>
 
-            <div class="StripeContainer flex justify-center mb-20">
+            <div class="StripeContainer flex justify-center mb-20 relative z-10">
               <div class="stripe bg-DG w-10/12 h-0.5 mb-5 shadow-sm rounded-full"></div>
             </div>
-            <div>
-              <h2 class="text-6xl font-bold text-DG text-center mb-12 font-bitter">populaire producten</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 p-5 gap-6 mb-16">
+            <div class="absolute inset-0 bg-linear-to-br from-DG/50 via-transparent to-KL/50 rounded-xl pointer-events-none"></div>
+            <h2 class="text-6xl font-bold text-DG text-center mb-12 relative z-10">populaire producten</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 p-5 gap-6 mb-16 relative z-10">
               <div
                 class="feature-card bg-white rounded-xl p-8 shadow-lg hover:shadow-KL hover:shadow-2xl transition-all duration-300 hover:scale-105 border-t-4 border-DG/80"
               >
@@ -275,10 +275,11 @@
           </div>
         </div>
 
-        <div class="recentCase container mx-auto px-6 py-20">
-          <h2 class="text-6xl font-bold mb-12 text-DG text-center font-bitter">Recent Nieuws</h2>
+        <div class="recentCase feature-card container mx-auto px-6 py-20 rounded-xl relative">
+          <div class="absolute inset-0 bg-linear-to-br from-KR/50 via-transparent to-DG/50 rounded-xl pointer-events-none"></div>
+          <h2 class="text-6xl font-bold mb-12 text-DG text-center relative z-10">Recent Nieuws</h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
             <div
               class="news-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-KL transition-all duration-300 hover:scale-105 border-l-4 border-KL"
             >
