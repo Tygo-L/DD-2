@@ -33,3 +33,16 @@
 .recentCase:hover {
   opacity: 1;
 }
+
+@font-face {
+  font-family: "Bitter Boldhuis";
+  src: url(./Bitter-Boldhuis.ttf);
+}
+
+:root {
+  --font-bitter:  "Bitter Boldhuis", ui-serif, Georgia, "Times New Roman", serif 
+}
+
+@layer utilities {
+    .font-bitter { font-family: var(--font-bitter) !important; }
+}
