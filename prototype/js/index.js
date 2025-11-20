@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = document.getElementById('navDropdown');
     const NavArrow = document.getElementById("dropArrow");
     if (!btn || !menu) return;
-    
+
     const navItems = menu.querySelectorAll('.nav-item');
-    
+
     function smoothScrollTo(target, duration = 2000) {
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
         const startPosition = window.pageYOffset;
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         requestAnimationFrame(animation);
     }
-    
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            
+
             if (targetId === '#top') {
                 smoothScrollTo(document.body, 2000);
             } else {
@@ -45,14 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    
+
     const sections = document.querySelectorAll('.contentSection, .recentCase, .feature-card, .news-card');
-    
+
     const observerOptions = {
         threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5],
         rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, observerOptions);
-    
+
     sections.forEach(section => {
         sectionObserver.observe(section);
     });
-    
+
     btn.addEventListener('click', e => {
         const open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-    
+
     document.addEventListener('click', e => {
         if (!btn.contains(e.target) && !menu.contains(e.target)) {
             navItems.forEach(item => {
