@@ -6,6 +6,61 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const navItems = menu.querySelectorAll('.nav-item');
     
+    function smoothScrollTo(target, duration = 2000) {
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+    }
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                smoothScrollTo(target, 2000);
+            }
+        });
+    });
+    
+    const sections = document.querySelectorAll('.contentSection, .recentCase, .feature-card, .news-card');
+    
+    const observerOptions = {
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5],
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+                entry.target.classList.add('section-highlight');
+            } else if (entry.intersectionRatio < 0.1) {
+                entry.target.classList.remove('section-highlight');
+            }
+        });
+    }, observerOptions);
+    
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+    
     btn.addEventListener('click', e => {
         const open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
